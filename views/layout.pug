@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    //- link(rel='stylesheet', href='/styles.7c871f6e5b8b0fcf5893.css')
+    link(rel='stylesheet', href='http://kendo.cdn.telerik.com/2019.1.115/styles/kendo.common.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(type='text/javascript' src='http://kendo.cdn.telerik.com/2019.1.115/js/kendo.all.min.js')
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js')
+    script.
+      var data = !{data}
+      var column = !{column}
+      var gridState = !{gridState}
+    script(type='text/javascript' src='javascripts/customscript.js')
+  body
+    block content
